@@ -1,0 +1,95 @@
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    
+</head>
+<body>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card card-body" id="profile-wrapper">
+                    <img id="profile-pic" src="{% static 'images/hng.jpg' %}">
+                    <hr>
+                    <h4><i>Safi Monday Michael</i></h4>
+                    <p><b><i>55A Admiralty Way Lekki Phase 1</i></b></p>
+                    <p><b><i>+234 816-568-0638</i></b></p>
+                </div>                
+            </div>
+            <div class="col-md-9">
+                <div class="card card-body">
+                    <h4>My First Experience As A Developer</h4>
+                    <hr>
+                    <p><strong>I was once a chef, my love and passion for programming gave birth to the determination and zeal to become
+                        a Web Developer. I joined FreeCodeCamp, and started coding and making new friends from the tech world. I
+                        got my first certificate there after taking Html and Css examination. I got my first job as junior staff
+                        with Pashi Tech in 2014 and left in 2020.</strong>
+                    </p>
+                    <p><b><li>Helped Pashi Tech in building 5 extra branches accross Lagos.</li></b></p>
+                    <p><b><li>Supervised some of the projects in the absence of my supervisor.</li></b></p>
+                    <p><b><li>Won the junior staff award in my second year.</li></b></p>
+
+                    <ul class="social-links">
+                        <li><img class="social-links" src="{% static 'images/zuri.png' %}"></li>
+                        <li><img class="social-links" src="{% static 'images/yozuri.png' %}"></li>
+                        <li><img class="social-links" src="{% static 'images/whats.png' %}"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="edu">
+            <div class="col-md-6">
+                <div class="card card-body" id="bingo">
+                    <h3>EDUCATION</h3>
+                    <hr>
+                    <p>
+                        <ul>
+                            <li><i>MS in Computer Science From Lagos State University -2014</i></li>
+                            <br>
+                            <li><i>SSCE from Badagry Grammar School -2009</i></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card card-body" id="rut">
+                    <h3>SKILLS</h3>
+                    <hr>
+                    <p>
+                        <li><i>Project Management and Fast Production That Is Sustainable</i></li>
+                        <li><i>Data Analysis And Cyber Security And Artificial Intelligence</i></li>
+                        <li><i>Web Development, Design and Hosting</i></li> 
+                                            
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="mb-3">
+            <h3>Customers Form</h3>
+            <hr>
+            <form type action="" method="post">
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit">
+
+            </form>
+          </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>   
+</body>
+
+</html>
